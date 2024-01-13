@@ -1,1 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:8433;databaseName=SH_SJZL;encrypt=true;trustServerCertificate=true;
+    username: hc
+    password: 1
 
