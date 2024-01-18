@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 @TableName("id_card_type")
-// 身份证件类别代码表
 public class IdCardType {
 
     private String id;
