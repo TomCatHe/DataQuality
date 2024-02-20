@@ -210,7 +210,7 @@ public class TbBillYwlReport implements Serializable {
         ", dzpjchzs = " + dzpjchzs +
         ", cxbz = " + cxbz +
         ", ylyl1 = " + ylyl1 +
-        ", ylyl2 = " + ylyl2 +œœ
+        ", ylyl2 = " + ylyl2 +
         ", ylyl3 = " + ylyl3 +
         ", warFlag = " + warFlag +
         ", warNote = " + warNote +

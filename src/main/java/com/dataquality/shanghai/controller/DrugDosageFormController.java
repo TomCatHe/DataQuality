@@ -1,7 +1,11 @@
 package com.dataquality.shanghai.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.stereotype.Controller;
+import com.dataquality.shanghai.entity.DrugDosageForm;
+import com.dataquality.shanghai.service.DrugDosageFormService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,8 +15,16 @@ import org.springframework.stereotype.Controller;
  * @author TomCatHe
  * @since 2024-01-18
  */
-@Controller
+@RestController
 @RequestMapping("/drugDosageForm")
 public class DrugDosageFormController {
+
+    @Autowired
+    DrugDosageFormService drugDosageFormService;
+
+    @RequestMapping(value = "/all")
+    public List<DrugDosageForm> selectAll() {
+        return drugDosageFormService.list();
+    }
 
 }
