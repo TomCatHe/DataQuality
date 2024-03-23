@@ -5,3 +5,11 @@ spring:
     username: hc
     password: 1
 
+logging:
+  level:
+    root: info
+    com.dataquality.shanghai.mapper: debug
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
